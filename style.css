@@ -1,13 +1,17 @@
 /* Globalne ustawienia */
 html, body {
-  height: 100%;
+  height: 100%; /* Wymuszenie pełnej wysokości */
   margin: 0;
   padding: 0;
   background-image: url('images/tlo.png'); /* Tło */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #333;
+  background-size: cover; /* Tło dopasowuje się do wymiarów ekranu */
+  background-position: center; /* Wyśrodkowanie tła */
+  background-repeat: no-repeat; /* Zapobiega powtarzaniu */
+  background-attachment: fixed; /* Tło przyklejone podczas przewijania */
+}
+
+body {
+  min-height: 100vh; /* Minimalna wysokość dla całego widoku */
 }
 
 /* Logo */
@@ -24,7 +28,7 @@ html, body {
 /* Kontener wyszukiwarki */
 .container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.8); /* Półprzezroczyste tło */
+  background: rgba(255, 255, 255, 0.8); /* Półprzezroczyste białe tło */
   padding: 20px;
   margin: 40px auto;
   width: 90%;
@@ -64,50 +68,47 @@ tr:hover {
   background: #f1f1f1;
 }
 
-/* RESPONSYWNOŚĆ */
-
-/* Ekrany mniejsze niż 768px */
+/* Responsywność */
 @media (max-width: 768px) {
   .logo {
-    max-width: 150px; /* Zmniejsz logo */
+    max-width: 150px;
     height: auto;
   }
 
   .container {
-    width: 95%; /* Zwiększ szerokość kontenera */
-    padding: 15px; /* Zmniejsz marginesy wewnętrzne */
+    width: 95%;
+    padding: 15px;
     margin: 20px auto;
   }
 
   input[type="text"] {
-    width: 90%; /* Większa szerokość pola wyszukiwania */
+    width: 90%;
     font-size: 14px;
   }
 
   table {
-    font-size: 12px; /* Zmniejsz tekst w tabeli */
+    font-size: 12px;
   }
 
   th, td {
-    padding: 8px; /* Mniejsze odstępy w komórkach tabeli */
+    padding: 8px;
   }
 }
 
-/* Ekrany mniejsze niż 480px */
 @media (max-width: 480px) {
   .logo {
-    max-width: 100px; /* Jeszcze mniejsze logo */
+    max-width: 100px;
   }
 
   .container {
-    padding: 10px; /* Dostosuj marginesy */
+    padding: 10px;
   }
 
   input[type="text"] {
-    font-size: 12px; /* Mniejszy tekst w polu wyszukiwania */
+    font-size: 12px;
   }
 
   table {
-    font-size: 10px; /* Zmniejsz tabelę dla najmniejszych ekranów */
+    font-size: 10px;
   }
 }
