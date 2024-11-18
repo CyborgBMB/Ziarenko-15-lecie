@@ -1,27 +1,39 @@
+/* Globalne ustawienia */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f5f9;
-}
-body {
-  background-image: url('https://imgur.com/xTGi3O1.png'); /* Twój obraz */
+  background-image: url('images/tlo.png'); /* Tło */
   background-size: cover; /* Dopasowanie do całej strony */
-  background-repeat: no-repeat; /* Zapobiega powtarzaniu obrazu */
-  background-position: center; /* Wyśrodkowanie obrazu */
+  background-position: center; /* Wyśrodkowanie tła */
+  background-repeat: no-repeat; /* Zapobieganie powtarzaniu tła */
+  color: #333; /* Kolor tekstu */
 }
 
+/* Logo */
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Kontener główny */
 .container {
   text-align: center;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8); /* Półprzezroczyste tło */
   padding: 20px;
-  margin: 1px auto;
+  margin: 20px auto;
   width: 90%;
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Pole wyszukiwania */
 input[type="text"] {
   width: 80%;
   padding: 10px;
@@ -30,22 +42,12 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+/* Tabela */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
-.logo-container {
-  text-align: center; /* Wyśrodkowuje logo */
-  margin-top: 0px; /* Odstęp od góry strony */
-  margin-bottom: -250px; /* Odstęp między logo a wyszukiwarką */
-}
-
-.logo {
-  max-width: 8000px; /* Maksymalna szerokość logo */
-  height: auto; /* Automatyczne zachowanie proporcji */
-}
-
 
 th, td {
   padding: 10px;
@@ -60,74 +62,4 @@ th {
 
 tr:hover {
   background: #f1f1f1;
-}
-
-/* Modal logowania */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 30%;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.modal-content input {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#edit-container {
-  text-align: right;
-  margin: 10px 20px;
-}
-
-@media (max-width: 600px) {
-  .container {
-    width: 95%;
-    padding: 10px;
-  }
-
-  table {
-    font-size: 12px;
-  }
-
-  .modal-content {
-    width: 90%;
-  }
-
-  input[type="text"] {
-    width: 90%;
-  }
 }
