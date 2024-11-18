@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="edit-container">
+    <button id="editButton" onclick="toggleLogin()">Edytuj</button>
+  </div>
+
+  <!-- Modal logowania -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleLogin()">&times;</span>
+      <h2>Zaloguj się</h2>
+      <input type="text" id="loginInput" placeholder="Login">
+      <input type="password" id="passwordInput" placeholder="Hasło">
+      <button onclick="login()">Zaloguj</button>
+      <p id="loginError" style="color: red; display: none;">Nieprawidłowy login lub hasło</p>
+    </div>
+  </div>
+
   <div class="container">
     <h1>Znajdź Swój Stolik</h1>
     <input type="text" id="searchInput" placeholder="Wpisz nazwisko..." onkeyup="searchGuest()">
