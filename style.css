@@ -95,3 +95,22 @@ tr:hover {
   text-align: right;
   margin: 10px 20px;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+}
