@@ -525,9 +525,6 @@ let tables = {
 "KATARZYNA GIEL", 
 "KRZYSZTOF GIEL" 
 ]
-    "",
-    
-  ],
   // Dodaj kolejne stoliki według Twojej listy
 };
 
