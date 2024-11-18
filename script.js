@@ -156,7 +156,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "BIAŁOŃ AGATA", 
 "OSOBA TOWARZYSZĄCA" 
-]
+],
   12: [ 
 "MAREK KAŁUŻA", 
 "OSOBA TOWARZYSZĄCA", 
@@ -170,7 +170,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "TOMEK ORŁOWSKI", 
 "OSOBA TOWARZYSZĄCA" 
-]
+],
 13: [ 
 "MARIUSZ PIOTROWSKI", 
 "OSOBA TOWARZYSZĄCA", 
@@ -182,7 +182,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "DANIEL DUBIEL", 
 "ADAM GRANDA" 
-]
+],
 14: [ 
 "RAFAŁ HAHN", 
 "OSOBA TOWARZYSZĄCA", 
@@ -195,8 +195,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "ANETA KWAŚNA", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 15: [ 
 "OLA CZYŻ", 
 "OSOBA TOWARZYSZĄCA", 
@@ -209,8 +208,7 @@ let tables = {
 "IVAN BODENCHUK", 
 "ILONA SYLIUK", 
 "OLENA BLAZHKEVYCH" 
-]
-
+],
 16: [ 
 "TERESA JAGUCKA", 
 "OSOBA TOWARZYSZĄCA", 
@@ -222,8 +220,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "PAWEŁ MRUK", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 17: [ 
 "ADAM KUC", 
 "DENIS MAROÑ", 
@@ -235,8 +232,7 @@ let tables = {
 "ROMAN KHASIA", 
 "OSOBA TOWARZYSZĄCA", 
 "ANDRII BLAZHKEVYCH" 
-]
-
+],
 18: [ 
 "WIKTORIA JASIK", 
 "OSOBA TOWARZYSZĄCA", 
@@ -250,8 +246,7 @@ let tables = {
 "ROZALIA RURYK", 
 "IWONA BUDZIULIAK", 
 "OLGA TRYL" 
-]
-
+],
 19: [ 
 "BERNADETTA LIGNAR", 
 "BOGUSIA BONISŁAWSKA", 
@@ -263,8 +258,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "ANETA BUJOCZEK", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 20: [ 
 "GRZEGORZ BAUCH", 
 "OSOBA TOWARZYSZĄCA", 
@@ -276,8 +270,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "MIROSŁAW KLEJNA", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 21: [ 
 "AGNIESZKA MASTALERZ", 
 "OSOBA TOWARZYSZĄCA", 
@@ -290,8 +283,7 @@ let tables = {
 "DANUTA KRAMARCZYK", 
 "NATALIA DEMCIO", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 22: [ 
 "MONIKA BOROWIEC", 
 "MAŁGORZATA FRYC", 
@@ -302,7 +294,7 @@ let tables = {
 "RENATA BARAN", 
 "AGNIESZKA PITAS", 
 "MAREK PITAS" 
-]
+],
  23: [ 
 "JACEK DYSZY", 
 "OSOBA TOWARZYSZĄCA", 
@@ -316,8 +308,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "ADAM MAZUR", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 24: [ 
 "MICHAL LIWOŃ", 
 "OSOBA TOWARZYSZĄCA", 
@@ -331,8 +322,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "MATEUSZ KOCOT", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 25: [ 
 "ZESPÓŁ ERDANOWSKI", 
 "ZESPÓŁ ERDANOWSKI", 
@@ -348,8 +338,7 @@ let tables = {
 "ZESPÓŁ ERDANOWSKI", 
 "ZESPÓŁ ERDANOWSKI", 
 "KONFERANSJER" 
-]
-
+],
 26: [ 
 "KASIA MICHALCZYK", 
 "JACEK MICHALCZYK", 
@@ -361,8 +350,7 @@ let tables = {
 "SŁAWOMIR MIELNIK", 
 "IWONA PISKOREK", 
 "ANDRZEJ PISKOREK" 
-]
-
+],
 27: [ 
 "KASIA GORCZYŃSKA", 
 "DAREK GORCZYŃSKI", 
@@ -376,8 +364,7 @@ let tables = {
 "MICHAŁ WIELICZKO", 
 "GRAŻYNA JAKUBIEC", 
 "MAREK JAKUBIEC" 
-]
-
+],
 28: [ 
 "SANDRA WIELICZKO", 
 "OSOBA TOWARZYSZĄCA", 
@@ -389,8 +376,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "MARCIN CWILĄG", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 29: [ 
 "MONIKA AUGUSTYN", 
 "DARIUSZ AUGUSTYN", 
@@ -403,8 +389,7 @@ let tables = {
 "SYLWIA GRONDAL", 
 "ŁUKASZ GRONDAL", 
 "MATEUSZ JAKUBIEC" 
-]
-
+],
 30: [ 
 "Anna Tandyrak", 
 "Stanisław Tandyrak", 
@@ -416,8 +401,7 @@ let tables = {
 "Piotr Jakonik", 
 "Agnieszka Markiewicz", 
 "Krzysztof Markiewicz" 
-]
-
+],
 31: [ 
 "GRZEGORZ MIKETA", 
 "OSOBA TOWARZYSZĄCA", 
@@ -431,8 +415,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "JERZY KĘDZIORA", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 32: [ 
 "MAREK SZMIDT", 
 "SYBILLA SZMIDT", 
@@ -443,8 +426,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "MARCIN JAGODZIK", 
 "ZUZANNA JAGODZIK" 
-]
-
+],
 33: [ 
 "JACEK BIERYT", 
 "BEATA BIERYT", 
@@ -456,8 +438,7 @@ let tables = {
 "EWA TROJAN", 
 "JAROSŁAW WOŹNICA", 
 "DOROTA WOŹNICA" 
-]
-
+],
 34: [ 
 "ANNA SORCZYŃSKA", 
 "OSOBA TOWARZYSZĄCA", 
@@ -470,8 +451,7 @@ let tables = {
 "HENRYK GOŁAŚ", 
 "HANNA JARZYNKA", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 35: [ 
 "KRZYSZTOF TURZAŃSKI", 
 "OSOBA TOWARZYSZĄCA", 
@@ -485,8 +465,7 @@ let tables = {
 "ŻONA", 
 "SŁAWOMIR KUBIK", 
 "ŻONA" 
-]
-
+],
 36: [ 
 "MAREK JACKOWSKI", 
 "OSOBA TOWARZYSZĄCA", 
@@ -500,8 +479,7 @@ let tables = {
 "OSOBA TOWARZYSZĄCA", 
 "ANDRZEJ NAKIELNY", 
 "OSOBA TOWARZYSZĄCA" 
-]
-
+],
 37: [ 
 "JOLANTA ZWIERZCHOWSKA", 
 "BOGUSŁAW ZWIERZCHOWSKI", 
@@ -512,8 +490,7 @@ let tables = {
 "MAŁGORZATA ZWIERZCHOWSKA", 
 "PRZEMYSŁAW KULANIN", 
 "RAFAŁ ZWIERZCHOWSKI" 
-]
-
+],
 38: [ 
 "PIOTR SUTOR", 
 "URSZULA SIECZKA", 
@@ -524,7 +501,7 @@ let tables = {
 "PIOTR GURSZCZYK", 
 "KATARZYNA GIEL", 
 "KRZYSZTOF GIEL" 
-]
+],
   // Dodaj kolejne stoliki według Twojej listy
 };
 
