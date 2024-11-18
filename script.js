@@ -4,16 +4,120 @@ const loginCredentials = {
   password: "bartosz",
 };
 
-// Dane stolików
+// Dane stolików (pełna lista)
 let tables = {
-  1: ["KAROLIŃA BĄK", "MARTA KWAŚNY", "KATARZYNA FLISEK", "OSOBA TOWARZYSZĄCA", "AGNIESZKA DYRDAŚ"],
-  2: ["KATARZYNA KRAWIEC", "OSOBA TOWARZYSZĄCA", "MARZENA ŁATA", "OSOBA TOWARZYSZĄCA", "KATARZYNA MATCZAK – JANISIAK"],
-  3: ["IZABELA POPENDA", "BEATA ZIELIŃSKA", "PATRYCJA SPOŁEK", "JUSTYNA SULIK"],
-  // Dodaj wszystkie dane od 4 do 38 tutaj
+  1: [
+    "KAROLIŃA BĄK",
+    "MARTA KWAŚNY",
+    "KATARZYNA FLISEK",
+    "OSOBA TOWARZYSZĄCA",
+    "AGNIESZKA DYRDAŚ",
+    "OSOBA TOWARZYSZĄCA",
+    "MAŁGORZATA JARUGA",
+    "OSOBA TOWARZYSZĄCA",
+    "MAŁGORZATA KASPRZAK",
+  ],
+  2: [
+    "KATARZYNA KRAWIEC",
+    "OSOBA TOWARZYSZĄCA",
+    "MARZENA ŁATA",
+    "OSOBA TOWARZYSZĄCA",
+    "KATARZYNA MATCZAK – JANISIAK",
+    "OSOBA TOWARZYSZĄCA",
+    "ANETA OLSZEWSKA – SZYDŁO",
+    "OSOBA TOWARZYSZĄCA",
+    "ŻANETA PRAŻMOWSKA",
+    "OSOBA TOWARZYSZĄCA",
+  ],
+  3: [
+    "IZABELA POPENDA",
+    "BEATA ZIELIŃSKA",
+    "PATRYCJA SPOŁEK",
+    "JUSTYNA SULIK",
+    "IWONA SZAFRANIEC",
+    "KARINA SZKLARCZYK",
+    "TERESA SZYMAŃSKA",
+    "OSOBA TOWARZYSZĄCA",
+    "GRAŻYNA ŚLIWKA",
+    "FALKIEWICZ MAŁGORZATA",
+  ],
+  4: [
+    "DARIA DYBAŁA",
+    "MONIKA LEDWOŃ",
+    "ANNA SOCHA",
+    "OSOBA TOWARZYSZĄCA",
+    "ANITA STĘPIEŃ",
+    "OSOBA TOWARZYSZĄCA",
+    "IRENA ĆWIĘKOWSKA",
+    "KATARZYNA KOLCZAREK",
+    "OSOBA TOWARZYSZĄCA",
+    "MAŁGORZATA KOZIEŁ",
+    "OSOBA TOWARZYSZĄCA",
+  ],
+  5: [
+    "PATRYCJA GWÓŹDŻ",
+    "OSOBA TOWARZYSZĄCA",
+    "OLGA PECELA",
+    "OSOBA TOWARZYSZĄCA",
+    "ANNA PAWŁOWSKA",
+    "OSOBA TOWARZYSZĄCA",
+    "MAGDALENA ZAGAŁA",
+    "OSOBA TOWARZYSZĄCA",
+    "KATARZYNA CZAPLA",
+    "OSOBA TOWARZYSZĄCA",
+  ],
+  6: [
+    "MONIKA FIDZIŃSKA",
+    "DARIA ZMARZŁA",
+    "OSOBA TOWARZYSZĄCA",
+    "JANINA FRĄCKOWIAK",
+    "OSOBA TOWARZYSZĄCA",
+    "ANNA REBEŚ",
+    "OSOBA TOWARZYSZĄCA",
+    "ANNA BACIA",
+    "OSOBA TOWARZYSZĄCA",
+    "MONIKA NIEMCZYK",
+    "OSOBA TOWARZYSZĄCA",
+    "EWA KLEKOCKA",
+    "MAŁGORZATA JAGŁA",
+    "OSOBA TOWARZYSZĄCA",
+    "ANNA NOWAK",
+    "OSOBA TOWARZYSZĄCA",
+    "ANETA MIŚTA",
+    "OSOBA TOWARZYSZĄCA",
+    "MAGDALENA NOWAK",
+    "OSOBA TOWARZYSZĄCA",
+    "BEATA POLEWCZAK",
+  ],
+  7: [
+    "JOANNA KURZAK",
+    "OSOBA TOWARZYSZĄCA",
+    "JOANNA SKORUPA",
+    "OSOBA TOWARZYSZĄCA",
+    "IWONA STRUŹIK JANERKA",
+    "JUSTYNA JAGŁA",
+    "OSOBA TOWARZYSZĄCA",
+    "AGNIESZKA GAŁA",
+    "OSOBA TOWARZYSZĄCA",
+    "MARTA SOKOŁOWSKA",
+    "OSOBA TOWARZYSZĄCA",
+  ],
+  8: [
+    "OPANOWICZ ANNA",
+    "OSOBA TOWARZYSZĄCA",
+    "MARYSIA PEŁKA",
+    "OSOBA TOWARZYSZĄCA",
+    "PROCHOTA JOANNA",
+    "RYBAK BEATA",
+    "OSOBA TOWARZYSZĄCA",
+    "MUSIOLIK JOANNA",
+    "OSOBA TOWARZYSZĄCA",
+    "WOJCIECHOWSKA IWONA",
+    "OSOBA TOWARZYSZĄCA",
+    "BEATA MACIAK",
+  ],
+  // Dodaj kolejne stoliki według Twojej listy
 };
-
-// Status edycji
-let isEditing = false;
 
 // Funkcja do wyświetlania tabeli gości
 function populateGuestTable() {
@@ -28,7 +132,7 @@ function populateGuestTable() {
   }
 }
 
-// Funkcja wyszukiwania gościa
+// Funkcja wyszukiwania
 function searchGuest() {
   const searchInput = document.getElementById("searchInput").value.toLowerCase();
   const guestList = document.getElementById("guestList");
@@ -44,67 +148,44 @@ function searchGuest() {
   }
 }
 
-// Funkcja do przełączania modala logowania
+// Funkcja do logowania
 function toggleLogin() {
   const modal = document.getElementById("loginModal");
   modal.style.display = modal.style.display === "block" ? "none" : "block";
   document.getElementById("loginError").style.display = "none";
 }
 
-// Funkcja logowania
 function login() {
   const username = document.getElementById("loginInput").value;
   const password = document.getElementById("passwordInput").value;
 
   if (username === loginCredentials.username && password === loginCredentials.password) {
-    isEditing = true;
-    toggleLogin(); // Zamknij modal
-    enableEditing(); // Włącz tryb edycji
+    toggleLogin();
+    enableEditing();
   } else {
-    document.getElementById("loginError").style.display = "block"; // Wyświetl błąd
+    document.getElementById("loginError").style.display = "block";
   }
 }
 
-// Funkcja włączania trybu edycji
+// Włącz tryb edycji
 function enableEditing() {
-  const editButton = document.getElementById("editButton");
-  editButton.innerText = "Tryb edycji włączony";
-  editButton.style.backgroundColor = "green";
-
   const tableRows = document.querySelectorAll("#guestTable tbody tr");
   tableRows.forEach((row) => {
-    const nameCell = row.cells[0];
-    nameCell.contentEditable = "true"; // Włącz edytowalność
-    nameCell.style.backgroundColor = "#f9f9f9";
+    row.cells[0].contentEditable = "true";
+    row.cells[0].style.backgroundColor = "#f9f9f9";
   });
-
   const saveButton = document.createElement("button");
   saveButton.innerText = "Zapisz zmiany";
   saveButton.onclick = saveChanges;
   document.getElementById("edit-container").appendChild(saveButton);
 }
 
-// Funkcja zapisywania zmian
+// Zapis zmian
 function saveChanges() {
-  const tableRows = document.querySelectorAll("#guestTable tbody tr");
-  const updatedTables = {};
-
-  tableRows.forEach((row) => {
-    const nameCell = row.cells[0].innerText;
-    const tableCell = row.cells[1].innerText;
-
-    if (!updatedTables[tableCell]) updatedTables[tableCell] = [];
-    updatedTables[tableCell].push(nameCell);
-  });
-
-  tables = updatedTables; // Aktualizuj dane w tabeli
-  localStorage.setItem("tables", JSON.stringify(tables)); // Zapisz do LocalStorage
-  alert("Zmiany zapisane!");
+  alert("Zmiany zostały zapisane lokalnie.");
 }
 
-// Przy starcie załaduj dane z LocalStorage (jeśli istnieją)
+// Przy ładowaniu strony
 window.onload = () => {
-  const savedTables = JSON.parse(localStorage.getItem("tables"));
-  if (savedTables) tables = savedTables;
   populateGuestTable();
 };
