@@ -7,7 +7,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Logo na górze strony -->
+  <header>
+    <img src="images/logo.png" alt="Logo" id="logo">
+  </header>
+
+  <!-- Wyszukiwarka -->
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Szukaj gościa...">
+    <button onclick="searchGuest()">Szukaj</button>
+  </div>
+
   <h1>Lista Gości</h1>
+
+  <!-- Tabela gości -->
   <table id="guestList">
     <thead>
       <tr>
@@ -19,6 +32,7 @@
       <!-- Tabela gości będzie wypełniana dynamicznie -->
     </tbody>
   </table>
+
   <script src="script.js"></script>
 </body>
 </html>
