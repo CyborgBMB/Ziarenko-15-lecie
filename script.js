@@ -1,6 +1,6 @@
 // Dane stolików
 let tables = {
-   1: [
+  1: [
     "KAROLIA BĄK",
     "MARTA KWAŚNY",
     "KATARZYNA FLISEK + OSOBA TOWARZYSZĄCA",
@@ -419,37 +419,26 @@ let tables = {
   ],
 };
 
+// Funkcja do wyszukiwania gościa
+function searchGuest() {
+  const searchBox = document.getElementById("searchBox");
+  const searchTerm = searchBox.value.toLowerCase();
+  const guestList = document.getElementById("guestList").getElementsByTagName('tbody')[0];
+  
+  // Wyczyść tabelę
+  guestList.innerHTML = "";
 
-// Funkcja do wyświetlania tabeli gości
-function populateGuestTable() {
-  const guestList = document.getElementById("guestList");
-  guestList.innerHTML = ""; // Wyczyść tabelę
+  // Filtruj gości
   for (const [tableId, guests] of Object.entries(tables)) {
     guests.forEach((guest) => {
-      const row = document.createElement("tr");
-      row.innerHTML = `<td>${guest}</td><td>${tableId}</td>`;
-      guestList.appendChild(row);
+      if (guest.toLowerCase().includes(searchTerm)) {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>${guest}</td><td>${tableId}</td>`;
+        guestList.appendChild(row);
+      }
     });
   }
 }
 
-// Funkcja wyszukiwania
-function searchGuest() {
-  const searchInput = document.getElementById("searchInput").value.toLowerCase();
-  const guestList = document.getElementById("guestList");
-  guestList.innerHTML = ""; // Wyczyść tabelę
-  for (const [tableId, guests] of Object.entries(tables)) {
-    guests
-      .filter((guest) => guest.toLowerCase().includes(searchInput))
-      .forEach((guest) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `<td>${guest}</td><td>${tableId}</td>`;
-        guestList.appendChild(row);
-      });
-  }
-}
-
-// Przy ładowaniu strony
-window.onload = () => {
-  populateGuestTable();
-};
+// Uruchomienie funkcji wypełniającej tabelę po załadowaniu strony
+window.onload = populateGuestTable;
