@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ziarenko 15 lat </title>
-  <link rel="stylesheet" href="style.css">
+  <title>Lista Gości</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Logo -->
-  <div class="logo-container">
-    <img src="images/logo.png" alt="Logo" class="logo">
-  </div>
-
-  <!-- Wyszukiwarka -->
-  <div class="container">
-    <h1>Znajdź Swój Stolik</h1>
-    <input type="text" id="searchInput" placeholder="Wpisz nazwisko..." onkeyup="searchGuest()">
-    <table id="guestTable">
-      <thead>
-        <tr>
-          <th>Imię i Nazwisko</th>
-          <th>Stolik</th>
-        </tr>
-      </thead>
-      <tbody id="guestList"></tbody>
-    </table>
-  </div>
-
+  <h1>Lista Gości</h1>
+  <table id="guestList">
+    <thead>
+      <tr>
+        <th>Gość</th>
+        <th>Stolik</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Tabela gości będzie wypełniana dynamicznie -->
+    </tbody>
+  </table>
   <script src="script.js"></script>
 </body>
 </html>
