@@ -1,3 +1,23 @@
+/* Globalne ustawienia */
+html, body {
+  height: 100%; /* Wymuszenie pełnej wysokości */
+  margin: 0;
+  padding: 0;
+  background-image: url('images/tlo.png'); /* Tło */
+  background-size: cover; /* Tło dopasowuje się do wymiarów ekranu */
+  background-position: center; /* Wyśrodkowanie tła */
+  background-repeat: no-repeat; /* Zapobiega powtarzaniu */
+  background-attachment: fixed; /* Tło przyklejone podczas przewijania */
+}
+
+body {
+  min-height: 100vh; /* Minimalna wysokość dla całego widoku */
+  font-family: 'Arial', sans-serif; /* Ustawienie czcionki */
+  font-weight: 400; /* Domyślna grubość tekstu */
+  line-height: 1.6; /* Zwiększenie odstępów między liniami */
+  background-color: #8B4513; /* Brązowe tło */
+}
+
 /* Logo */
 .logo-container {
   text-align: center;
@@ -7,12 +27,6 @@
 .logo {
   max-width: 300px; /* Zwiększony rozmiar logo */
   height: auto;
-}
-
-/* Czcionki */
-body {
-  font-family: 'Arial', sans-serif; /* Ustawienie czcionki */
-  font-weight: 400; /* Domyślna grubość tekstu */
 }
 
 /* Kontener wyszukiwarki */
@@ -28,15 +42,6 @@ body {
   font-weight: 600; /* Grubszy tekst w kontenerze */
 }
 
-/* Nagłówki tabeli */
-th {
-  background: #007bff;
-  color: white;
-  font-family: 'Roboto', sans-serif; /* Zmiana czcionki na inną */
-  font-weight: 700; /* Najgrubszy tekst */
-  text-transform: uppercase; /* Dodatkowo: wielkie litery */
-}
-
 /* Pole wyszukiwania */
 input[type="text"] {
   width: 80%;
@@ -46,6 +51,37 @@ input[type="text"] {
   border-radius: 5px;
   font-family: 'Arial', sans-serif; /* Dopasowanie czcionki do reszty */
   font-weight: 500; /* Grubszy tekst w polu */
+}
+
+/* Kafelki */
+.kafelki {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamiczne dostosowanie do szerokości ekranu */
+  gap: 20px; /* Odstępy między kafelkami */
+  margin-top: 20px;
+}
+
+.kafelek {
+  background: #ffffff; /* Białe tło dla kafelka */
+  border: 2px solid #007bff; /* Niebieska ramka */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kafelek h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 700; /* Grubsza czcionka */
+  color: #007bff; /* Niebieski kolor */
+}
+
+.kafelek p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500; /* Średnia grubość */
+  color: #333;
 }
 
 /* Responsywność */
