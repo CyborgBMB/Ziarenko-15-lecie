@@ -7,43 +7,46 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('images/background.jpg'); /* Tło */
+  background-image: url('images/tlo.jpg'); /* Ustawienie tła */
   background-size: cover;
   background-position: center;
   color: #fff;
   text-align: center;
   padding-top: 20px;
+  overflow-x: hidden; /* Zakazuje przewijania w poziomie */
 }
 
-/* Styl nagłówka z logo */
+/* Nagłówek z logo */
 header {
   margin-bottom: 30px;
 }
 
 #logo {
-  max-width: 200px;
+  max-width: 300px;
   width: 100%;
   height: auto;
+  margin: 0 auto; /* Wyśrodkowanie logo */
 }
 
 /* Styl wyszukiwarki */
 .search-container {
   margin: 20px auto;
   width: 80%;
-  max-width: 400px;
+  max-width: 600px;
   display: flex;
   justify-content: center;
 }
 
 #searchBox {
-  padding: 12px;
+  padding: 15px;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   transition: all 0.3s;
+  text-align: center;
 }
 
 #searchBox:focus {
@@ -84,7 +87,7 @@ header {
 
 @media (max-width: 768px) {
   #logo {
-    max-width: 150px;
+    max-width: 250px;
   }
 
   .guest-list {
@@ -92,7 +95,7 @@ header {
   }
 
   #searchBox {
-    padding: 10px;
-    font-size: 14px;
+    padding: 15px;
+    font-size: 18px;
   }
 }
