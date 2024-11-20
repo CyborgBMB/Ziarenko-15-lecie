@@ -7,31 +7,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Logo na górze strony -->
+  <!-- Nagłówek z logo -->
   <header>
     <img src="images/logo.png" alt="Logo" id="logo">
   </header>
 
   <!-- Wyszukiwarka -->
   <div class="search-container">
-    <input type="text" id="searchBox" placeholder="Szukaj gościa...">
-    <button onclick="searchGuest()">Szukaj</button>
+    <input type="text" id="searchBox" placeholder="Szukaj gościa..." oninput="searchGuest()">
   </div>
 
   <h1>Lista Gości</h1>
 
-  <!-- Tabela gości -->
-  <table id="guestList">
-    <thead>
-      <tr>
-        <th>Gość</th>
-        <th>Stolik</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Tabela gości będzie wypełniana dynamicznie -->
-    </tbody>
-  </table>
+  <!-- Kontener kafelków z gośćmi -->
+  <div id="guestList" class="guest-list">
+    <!-- Kafelki gości będą generowane dynamicznie -->
+  </div>
 
   <script src="script.js"></script>
 </body>
