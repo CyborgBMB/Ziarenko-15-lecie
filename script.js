@@ -419,19 +419,19 @@ let tables = {
   ],
 };
 
+
 // Funkcja do wyświetlania gości
 function populateGuestTable() {
   const guestList = document.getElementById("guestList");
   guestList.innerHTML = ""; // Wyczyść zawartość
 
-  // Dodaj gości do kafelków
   for (const [tableId, guests] of Object.entries(tables)) {
     guests.forEach((guest) => {
       const guestCard = document.createElement("div");
       guestCard.classList.add("guest-card");
       guestCard.innerHTML = `
         <h2>${guest}</h2>
-        <p>Stolik: ${tableId}</p>
+        <p class="table-number">Stolik: ${tableId}</p>
       `;
       guestList.appendChild(guestCard);
     });
@@ -446,7 +446,6 @@ function searchGuest() {
   const guestList = document.getElementById("guestList");
   guestList.innerHTML = ""; // Wyczyść zawartość
 
-  // Filtruj gości
   for (const [tableId, guests] of Object.entries(tables)) {
     guests.forEach((guest) => {
       if (guest.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchTerm)) {
@@ -454,7 +453,7 @@ function searchGuest() {
         guestCard.classList.add("guest-card");
         guestCard.innerHTML = `
           <h2>${guest}</h2>
-          <p>Stolik: ${tableId}</p>
+          <p class="table-number">Stolik: ${tableId}</p>
         `;
         guestList.appendChild(guestCard);
       }
