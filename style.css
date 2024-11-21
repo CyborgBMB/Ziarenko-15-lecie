@@ -1,4 +1,4 @@
-/* Podstawowy styl strony */
+/* Resetowanie i podstawowy styl */
 * {
   margin: 0;
   padding: 0;
@@ -7,87 +7,94 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('images/tlo.jpg'); /* Ustawienie tła */
+  background-image: url('images/tlo.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
   text-align: center;
-  padding-top: 20px;
-  overflow-x: hidden; /* Zakazuje przewijania w poziomie */
+  padding: 20px 10px;
+  overflow-x: hidden;
 }
 
-/* Nagłówek z logo */
+/* Nagłówek */
 header {
   margin-bottom: 30px;
 }
 
 #logo {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   height: auto;
-  margin: 0 auto; /* Wyśrodkowanie logo */
+  margin: 0 auto;
 }
 
-/* Styl wyszukiwarki */
+/* Wyszukiwarka */
 .search-container {
-  margin: 20px auto;
-  width: 80%;
+  margin: 30px auto;
+  width: 90%;
   max-width: 600px;
-  display: flex;
-  justify-content: center;
 }
 
 #searchBox {
-  padding: 15px;
+  padding: 20px;
   width: 100%;
-  font-size: 18px;
+  font-size: 24px;
   border: none;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #333;
-  transition: all 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
   text-align: center;
 }
 
 #searchBox:focus {
   outline: none;
   background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Kafelki gości */
 .guest-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .guest-card {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .guest-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .guest-card h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f9f9f9;
 }
 
 .guest-card p {
-  font-size: 16px;
-  margin: 0;
+  font-size: 18px;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.guest-card .table-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffa500;
 }
 
 @media (max-width: 768px) {
   #logo {
-    max-width: 250px;
+    max-width: 200px;
   }
 
   .guest-list {
@@ -96,6 +103,14 @@ header {
 
   #searchBox {
     padding: 15px;
+    font-size: 20px;
+  }
+
+  .guest-card h2 {
     font-size: 18px;
+  }
+
+  .guest-card p {
+    font-size: 16px;
   }
 }
