@@ -1,7 +1,7 @@
 // Dane stolików
 let tables = {
  1: [
-    "KAROLIA BĄK",
+    "KAROLINA BĄK",
     "MARTA KWAŚNY",
     "KATARZYNA FLISEK + OSOBA TOWARZYSZĄCA",
     "AGNIESZKA DYRDAŚ + OSOBA TOWARZYSZĄCA",
