@@ -295,7 +295,7 @@ let tables = {
     "ADAM SKOPAL",
     "KAROL ZAWADA + OSOBA TOWARZYSZĄCA",
     "MARCIN CWILĄG + OSOBA TOWARZYSZĄCA"
-"MATEUSZ JAKUBIEC",
+    "EDYTA WĘGRZYN"
 ],
 
   31: [
@@ -310,7 +310,6 @@ let tables = {
     "ŁUKASZ GRONDAL",
     "MATEUSZ MITAS + OSOBA TOWARZYSZĄCA"
 ],
-
   18: [
     "Anna Tandyrak",
     "Stanisław Tandyrak",
@@ -322,7 +321,6 @@ let tables = {
     "Agnieszka Markiewicz",
     "Krzysztof Markiewicz"
 ],
-
   20: [
     "GRZEGORZ MIKETA + OSOBA TOWARZYSZĄCA",
     "DAWID KUREK + OSOBA TOWARZYSZĄCA",
@@ -331,7 +329,6 @@ let tables = {
     "STEFAN MIKOŁAJCZAK + OSOBA TOWARZYSZĄCA",
     "JERZY KĘDZIORA + OSOBA TOWARZYSZĄCA"
 ],
-
   22: [
     "MAREK SZMIDT",
     "SYBILLA SZMIDT",
@@ -343,7 +340,6 @@ let tables = {
     "ZUZANNA JAGODZIK",
     "DAMIAN STARZYCZNY + OSOBA TOWARZYSZĄCA"
 ],
-
  23: [
     "JACEK BIERYT",
     "BEATA BIERYT",
@@ -356,7 +352,6 @@ let tables = {
     "JAROSŁAW WOŹNICA",
     "DOROTA WOŹNICA"
 ],
-
   29: [
     "ANNA SORCZYŃSKA + OSOBA TOWARZYSZĄCA",
     "AGNIESZKA NIEKRASZ + OSOBA TOWARZYSZĄCA",
@@ -368,7 +363,6 @@ let tables = {
     "HANNA JARZYNKA + OSOBA TOWARZYSZĄCA",
     "HENRYK JARZYNKA"
 ],
-
   32: [
     "KRZYSZTOF TURZAŃSKI + OSOBA TOWARZYSZĄCA",
     "DAMIAN BARTYLA + OSOBA TOWARZYSZĄCA",
@@ -378,7 +372,6 @@ let tables = {
     "SŁAWOMIR KUBIK + OSOBA TOWARZYSZĄCA"
     "WITOLD GAIK + OSOBA TOWARZYSZĄCA",
 ],
-
  21: [
     "MAREK JACKOWSKI + OSOBA TOWARZYSZĄCA",
     "ADAM LUBOCKI + OSOBA TOWARZYSZĄCA",
@@ -387,7 +380,6 @@ let tables = {
     "KATARZYNA ADAMIOK + OSOBA TOWARZYSZĄCA",
     "ANDRZEJ NAKIELNY + OSOBA TOWARZYSZĄCA"
 ],
-
   36: [
     "JOLANTA ZWIERZCHOWSKA",
     "BOGUSŁAW ZWIERZCHOWSKI",
@@ -399,7 +391,6 @@ let tables = {
     "PRZEMYSŁAW KULANIN",
     "RAFAŁ ZWIERZCHOWSKI"
 ],
-
   19: [
     "PIOTR SUTOR",
     "URSZULA SIECZKA",
