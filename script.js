@@ -407,8 +407,7 @@ let tables = {
     "ARTUR GURSZCZYK",
     "SYLWIA GURSZCZYK",
     "PIOTR GURSZCZYK",
-    "KATARZYNA GIEL",
-    "KRZYSZTOF GIEL"
+    "KRZYSZTOF i KATARZYNA GIEL",
 ],
 };
 
