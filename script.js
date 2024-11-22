@@ -294,7 +294,8 @@ let tables = {
     "ADAM SKOPAL",
     "KAROL ZAWADA + OSOBA TOWARZYSZĄCA",
     "MARCIN CWILĄG + OSOBA TOWARZYSZĄCA",
-    "EDYTA WĘGRZYN"
+    "EDYTA WĘGRZYN",
+    "MATEUSZ JAKUBIEC"
 ],
 
   31: [
